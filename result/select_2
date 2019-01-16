@@ -1,0 +1,1385 @@
+[info] Loading settings for project global-plugins from idea.sbt ...
+[info] Loading global plugins from /Users/guyue/.sbt/1.0/plugins
+[info] Loading settings for project mison-build from plugins.sbt ...
+[info] Loading project definition from /Users/guyue/workspace/mison/project
+[info] Loading settings for project root from build.sbt ...
+[info] Set current project to root (in build file:/Users/guyue/workspace/mison/)
+[info] Compiling 5 Scala sources to /Users/guyue/workspace/mison/mison/target/scala-2.12/classes ...
+[info] Done compiling.
+[info] Packaging /Users/guyue/workspace/mison/mison/target/scala-2.12/mison_2.12-0.1.0-SNAPSHOT.jar ...
+[info] Done packaging.
+[info] Compiling 1 Scala source to /Users/guyue/workspace/mison/benchmarks/target/scala-2.12/classes ...
+[info] Done compiling.
+[info] Packaging /Users/guyue/workspace/mison/benchmarks/target/scala-2.12/benchmarks_2.12-0.1.0-SNAPSHOT.jar ...
+[info] Done packaging.
+Processing 15 classes from /Users/guyue/workspace/mison/benchmarks/target/scala-2.12/classes with "reflection" generator
+Writing out Java source to /Users/guyue/workspace/mison/benchmarks/target/scala-2.12/src_managed/jmh and resources to /Users/guyue/workspace/mison/benchmarks/target/scala-2.12/resource_managed/jmh
+[info] Compiling 10 Java sources to /Users/guyue/workspace/mison/benchmarks/target/scala-2.12/classes ...
+[info] Done compiling.
+[info] Packaging /Users/guyue/workspace/mison/benchmarks/target/scala-2.12/benchmarks_2.12-0.1.0-SNAPSHOT-jmh.jar ...
+[info] Done packaging.
+[info] Running (fork) org.openjdk.jmh.Main .*
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.fastJson
+[info] # Parameters: (entry = empty)
+[info] # Run progress: 0.00% complete, ETA 00:08:00
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 425.757 ns/op
+[info] # Warmup Iteration   2: 107.507 ns/op
+[info] # Warmup Iteration   3: 52.925 ns/op
+[info] # Warmup Iteration   4: 53.146 ns/op
+[info] # Warmup Iteration   5: 52.582 ns/op
+[info] Iteration   1: 54.056 ns/op
+[info] Iteration   2: 53.090 ns/op
+[info] Iteration   3: 54.000 ns/op
+[info] Iteration   4: 51.972 ns/op
+[info] Iteration   5: 52.703 ns/op
+[info] Result "mison.Benchmarks.fastJson":
+[info]   53.164 ±(99.9%) 3.408 ns/op [Average]
+[info]   (min, avg, max) = (51.972, 53.164, 54.056), stdev = 0.885
+[info]   CI (99.9%): [49.756, 56.572] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.fastJson
+[info] # Parameters: (entry = short)
+[info] # Run progress: 2.08% complete, ETA 00:14:37
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 921.276 ns/op
+[info] # Warmup Iteration   2: 403.074 ns/op
+[info] # Warmup Iteration   3: 333.762 ns/op
+[info] # Warmup Iteration   4: 273.030 ns/op
+[info] # Warmup Iteration   5: 271.347 ns/op
+[info] Iteration   1: 279.109 ns/op
+[info] Iteration   2: 275.878 ns/op
+[info] Iteration   3: 270.073 ns/op
+[info] Iteration   4: 274.346 ns/op
+[info] Iteration   5: 273.865 ns/op
+[info] Result "mison.Benchmarks.fastJson":
+[info]   274.654 ±(99.9%) 12.631 ns/op [Average]
+[info]   (min, avg, max) = (270.073, 274.654, 279.109), stdev = 3.280
+[info]   CI (99.9%): [262.023, 287.285] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.fastJson
+[info] # Parameters: (entry = medium)
+[info] # Run progress: 4.17% complete, ETA 00:12:15
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1465.739 ns/op
+[info] # Warmup Iteration   2: 704.372 ns/op
+[info] # Warmup Iteration   3: 680.428 ns/op
+[info] # Warmup Iteration   4: 1327.681 ns/op
+[info] # Warmup Iteration   5: 689.180 ns/op
+[info] Iteration   1: 680.270 ns/op
+[info] Iteration   2: 678.367 ns/op
+[info] Iteration   3: 714.140 ns/op
+[info] Iteration   4: 682.727 ns/op
+[info] Iteration   5: 678.778 ns/op
+[info] Result "mison.Benchmarks.fastJson":
+[info]   686.856 ±(99.9%) 59.097 ns/op [Average]
+[info]   (min, avg, max) = (678.367, 686.856, 714.140), stdev = 15.347
+[info]   CI (99.9%): [627.760, 745.953] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.fastJson
+[info] # Parameters: (entry = long)
+[info] # Run progress: 6.25% complete, ETA 00:11:23
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 5209.847 ns/op
+[info] # Warmup Iteration   2: 3123.720 ns/op
+[info] # Warmup Iteration   3: 2822.316 ns/op
+[info] # Warmup Iteration   4: 2905.150 ns/op
+[info] # Warmup Iteration   5: 3491.961 ns/op
+[info] Iteration   1: 2833.173 ns/op
+[info] Iteration   2: 3093.123 ns/op
+[info] Iteration   3: 2822.314 ns/op
+[info] Iteration   4: 2894.062 ns/op
+[info] Iteration   5: 2852.556 ns/op
+[info] Result "mison.Benchmarks.fastJson":
+[info]   2899.046 ±(99.9%) 430.856 ns/op [Average]
+[info]   (min, avg, max) = (2822.314, 2899.046, 3093.123), stdev = 111.892
+[info]   CI (99.9%): [2468.190, 3329.901] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.fastJson
+[info] # Parameters: (entry = huge)
+[info] # Run progress: 8.33% complete, ETA 00:10:42
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 38860.511 ns/op
+[info] # Warmup Iteration   2: 23130.998 ns/op
+[info] # Warmup Iteration   3: 23071.875 ns/op
+[info] # Warmup Iteration   4: 25582.791 ns/op
+[info] # Warmup Iteration   5: 23023.224 ns/op
+[info] Iteration   1: 23020.392 ns/op
+[info] Iteration   2: 23657.915 ns/op
+[info] Iteration   3: 23513.894 ns/op
+[info] Iteration   4: 22534.869 ns/op
+[info] Iteration   5: 23019.762 ns/op
+[info] Result "mison.Benchmarks.fastJson":
+[info]   23149.366 ±(99.9%) 1724.792 ns/op [Average]
+[info]   (min, avg, max) = (22534.869, 23149.366, 23657.915), stdev = 447.923
+[info]   CI (99.9%): [21424.574, 24874.159] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.fastJson
+[info] # Parameters: (entry = giant)
+[info] # Run progress: 10.42% complete, ETA 00:10:09
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 119265.709 ns/op
+[info] # Warmup Iteration   2: 84412.977 ns/op
+[info] # Warmup Iteration   3: 86136.566 ns/op
+[info] # Warmup Iteration   4: 89991.514 ns/op
+[info] # Warmup Iteration   5: 85953.131 ns/op
+[info] Iteration   1: 86642.859 ns/op
+[info] Iteration   2: 84420.532 ns/op
+[info] Iteration   3: 84555.659 ns/op
+[info] Iteration   4: 88018.444 ns/op
+[info] Iteration   5: 85160.246 ns/op
+[info] Result "mison.Benchmarks.fastJson":
+[info]   85759.548 ±(99.9%) 5929.343 ns/op [Average]
+[info]   (min, avg, max) = (84420.532, 85759.548, 88018.444), stdev = 1539.832
+[info]   CI (99.9%): [79830.205, 91688.891] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.jackson
+[info] # Parameters: (entry = empty)
+[info] # Run progress: 12.50% complete, ETA 00:09:42
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 135.328 ns/op
+[info] # Warmup Iteration   2: 92.984 ns/op
+[info] # Warmup Iteration   3: 98.131 ns/op
+[info] # Warmup Iteration   4: 91.858 ns/op
+[info] # Warmup Iteration   5: 91.223 ns/op
+[info] Iteration   1: 96.385 ns/op
+[info] Iteration   2: 93.983 ns/op
+[info] Iteration   3: 96.437 ns/op
+[info] Iteration   4: 126.042 ns/op
+[info] Iteration   5: 98.291 ns/op
+[info] Result "mison.Benchmarks.jackson":
+[info]   102.228 ±(99.9%) 51.599 ns/op [Average]
+[info]   (min, avg, max) = (93.983, 102.228, 126.042), stdev = 13.400
+[info]   CI (99.9%): [50.628, 153.827] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.jackson
+[info] # Parameters: (entry = short)
+[info] # Run progress: 14.58% complete, ETA 00:09:20
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 499.815 ns/op
+[info] # Warmup Iteration   2: 347.519 ns/op
+[info] # Warmup Iteration   3: 272.323 ns/op
+[info] # Warmup Iteration   4: 310.740 ns/op
+[info] # Warmup Iteration   5: 300.199 ns/op
+[info] Iteration   1: 292.047 ns/op
+[info] Iteration   2: 299.517 ns/op
+[info] Iteration   3: 450.056 ns/op
+[info] Iteration   4: 284.557 ns/op
+[info] Iteration   5: 270.294 ns/op
+[info] Result "mison.Benchmarks.jackson":
+[info]   319.294 ±(99.9%) 284.531 ns/op [Average]
+[info]   (min, avg, max) = (270.294, 319.294, 450.056), stdev = 73.892
+[info]   CI (99.9%): [34.764, 603.825] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.jackson
+[info] # Parameters: (entry = medium)
+[info] # Run progress: 16.67% complete, ETA 00:09:01
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 933.677 ns/op
+[info] # Warmup Iteration   2: 618.040 ns/op
+[info] # Warmup Iteration   3: 800.255 ns/op
+[info] # Warmup Iteration   4: 603.676 ns/op
+[info] # Warmup Iteration   5: 620.756 ns/op
+[info] Iteration   1: 608.216 ns/op
+[info] Iteration   2: 606.502 ns/op
+[info] Iteration   3: 616.157 ns/op
+[info] Iteration   4: 842.516 ns/op
+[info] Iteration   5: 642.317 ns/op
+[info] Result "mison.Benchmarks.jackson":
+[info]   663.142 ±(99.9%) 390.043 ns/op [Average]
+[info]   (min, avg, max) = (606.502, 663.142, 842.516), stdev = 101.293
+[info]   CI (99.9%): [273.098, 1053.185] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.jackson
+[info] # Parameters: (entry = long)
+[info] # Run progress: 18.75% complete, ETA 00:08:45
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 3743.065 ns/op
+[info] # Warmup Iteration   2: 5000.058 ns/op
+[info] # Warmup Iteration   3: 2575.666 ns/op
+[info] # Warmup Iteration   4: 2646.666 ns/op
+[info] # Warmup Iteration   5: 2676.254 ns/op
+[info] Iteration   1: 2755.454 ns/op
+[info] Iteration   2: 2590.342 ns/op
+[info] Iteration   3: 2793.356 ns/op
+[info] Iteration   4: 2832.750 ns/op
+[info] Iteration   5: 2629.238 ns/op
+[info] Result "mison.Benchmarks.jackson":
+[info]   2720.228 ±(99.9%) 405.687 ns/op [Average]
+[info]   (min, avg, max) = (2590.342, 2720.228, 2832.750), stdev = 105.356
+[info]   CI (99.9%): [2314.541, 3125.915] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.jackson
+[info] # Parameters: (entry = huge)
+[info] # Run progress: 20.83% complete, ETA 00:08:28
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 32179.292 ns/op
+[info] # Warmup Iteration   2: 40588.294 ns/op
+[info] # Warmup Iteration   3: 29512.823 ns/op
+[info] # Warmup Iteration   4: 32890.120 ns/op
+[info] # Warmup Iteration   5: 22134.552 ns/op
+[info] Iteration   1: 21739.048 ns/op
+[info] Iteration   2: 20565.085 ns/op
+[info] Iteration   3: 20383.183 ns/op
+[info] Iteration   4: 21459.367 ns/op
+[info] Iteration   5: 21278.517 ns/op
+[info] Result "mison.Benchmarks.jackson":
+[info]   21085.040 ±(99.9%) 2252.081 ns/op [Average]
+[info]   (min, avg, max) = (20383.183, 21085.040, 21739.048), stdev = 584.858
+[info]   CI (99.9%): [18832.959, 23337.120] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.jackson
+[info] # Parameters: (entry = giant)
+[info] # Run progress: 22.92% complete, ETA 00:08:11
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 153483.182 ns/op
+[info] # Warmup Iteration   2: 87472.732 ns/op
+[info] # Warmup Iteration   3: 86944.783 ns/op
+[info] # Warmup Iteration   4: 103202.626 ns/op
+[info] # Warmup Iteration   5: 85816.837 ns/op
+[info] Iteration   1: 85121.881 ns/op
+[info] Iteration   2: 85942.424 ns/op
+[info] Iteration   3: 85007.135 ns/op
+[info] Iteration   4: 84869.954 ns/op
+[info] Iteration   5: 84651.934 ns/op
+[info] Result "mison.Benchmarks.jackson":
+[info]   85118.665 ±(99.9%) 1896.929 ns/op [Average]
+[info]   (min, avg, max) = (84651.934, 85118.665, 85942.424), stdev = 492.626
+[info]   CI (99.9%): [83221.736, 87015.594] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.mison
+[info] # Parameters: (entry = empty)
+[info] # Run progress: 25.00% complete, ETA 00:07:55
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1378.519 ns/op
+[info] # Warmup Iteration   2: 932.234 ns/op
+[info] # Warmup Iteration   3: 861.953 ns/op
+[info] # Warmup Iteration   4: 852.746 ns/op
+[info] # Warmup Iteration   5: 1111.988 ns/op
+[info] Iteration   1: 883.413 ns/op
+[info] Iteration   2: 885.070 ns/op
+[info] Iteration   3: 847.125 ns/op
+[info] Iteration   4: 853.182 ns/op
+[info] Iteration   5: 869.293 ns/op
+[info] Result "mison.Benchmarks.mison":
+[info]   867.617 ±(99.9%) 66.283 ns/op [Average]
+[info]   (min, avg, max) = (847.125, 867.617, 885.070), stdev = 17.213
+[info]   CI (99.9%): [801.334, 933.899] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.mison
+[info] # Parameters: (entry = short)
+[info] # Run progress: 27.08% complete, ETA 00:07:40
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 2578.171 ns/op
+[info] # Warmup Iteration   2: 1618.109 ns/op
+[info] # Warmup Iteration   3: 1664.834 ns/op
+[info] # Warmup Iteration   4: 1613.695 ns/op
+[info] # Warmup Iteration   5: 1819.502 ns/op
+[info] Iteration   1: 1664.548 ns/op
+[info] Iteration   2: 1675.373 ns/op
+[info] Iteration   3: 1556.124 ns/op
+[info] Iteration   4: 1531.134 ns/op
+[info] Iteration   5: 1531.667 ns/op
+[info] Result "mison.Benchmarks.mison":
+[info]   1591.769 ±(99.9%) 277.979 ns/op [Average]
+[info]   (min, avg, max) = (1531.134, 1591.769, 1675.373), stdev = 72.190
+[info]   CI (99.9%): [1313.790, 1869.748] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.mison
+[info] # Parameters: (entry = medium)
+[info] # Run progress: 29.17% complete, ETA 00:07:25
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 4452.634 ns/op
+[info] # Warmup Iteration   2: 2911.574 ns/op
+[info] # Warmup Iteration   3: 2896.857 ns/op
+[info] # Warmup Iteration   4: 3086.858 ns/op
+[info] # Warmup Iteration   5: 3000.142 ns/op
+[info] Iteration   1: 3112.992 ns/op
+[info] Iteration   2: 3032.959 ns/op
+[info] Iteration   3: 3100.197 ns/op
+[info] Iteration   4: 3041.994 ns/op
+[info] Iteration   5: 3018.280 ns/op
+[info] Result "mison.Benchmarks.mison":
+[info]   3061.285 ±(99.9%) 163.503 ns/op [Average]
+[info]   (min, avg, max) = (3018.280, 3061.285, 3112.992), stdev = 42.461
+[info]   CI (99.9%): [2897.782, 3224.787] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.mison
+[info] # Parameters: (entry = long)
+[info] # Run progress: 31.25% complete, ETA 00:07:10
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 6738.659 ns/op
+[info] # Warmup Iteration   2: 4440.097 ns/op
+[info] # Warmup Iteration   3: 4634.694 ns/op
+[info] # Warmup Iteration   4: 4269.343 ns/op
+[info] # Warmup Iteration   5: 4332.100 ns/op
+[info] Iteration   1: 4140.996 ns/op
+[info] Iteration   2: 4082.305 ns/op
+[info] Iteration   3: 4047.379 ns/op
+[info] Iteration   4: 4029.490 ns/op
+[info] Iteration   5: 4052.379 ns/op
+[info] Result "mison.Benchmarks.mison":
+[info]   4070.510 ±(99.9%) 168.439 ns/op [Average]
+[info]   (min, avg, max) = (4029.490, 4070.510, 4140.996), stdev = 43.743
+[info]   CI (99.9%): [3902.071, 4238.949] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.mison
+[info] # Parameters: (entry = huge)
+[info] # Run progress: 33.33% complete, ETA 00:06:56
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 26844.561 ns/op
+[info] # Warmup Iteration   2: 20065.023 ns/op
+[info] # Warmup Iteration   3: 18459.906 ns/op
+[info] # Warmup Iteration   4: 18670.143 ns/op
+[info] # Warmup Iteration   5: 18558.363 ns/op
+[info] Iteration   1: 18754.777 ns/op
+[info] Iteration   2: 19405.136 ns/op
+[info] Iteration   3: 18323.959 ns/op
+[info] Iteration   4: 19097.928 ns/op
+[info] Iteration   5: 19885.340 ns/op
+[info] Result "mison.Benchmarks.mison":
+[info]   19093.428 ±(99.9%) 2303.215 ns/op [Average]
+[info]   (min, avg, max) = (18323.959, 19093.428, 19885.340), stdev = 598.138
+[info]   CI (99.9%): [16790.213, 21396.643] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.mison
+[info] # Parameters: (entry = giant)
+[info] # Run progress: 35.42% complete, ETA 00:06:41
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 112674.648 ns/op
+[info] # Warmup Iteration   2: 109975.735 ns/op
+[info] # Warmup Iteration   3: 82095.467 ns/op
+[info] # Warmup Iteration   4: 68331.821 ns/op
+[info] # Warmup Iteration   5: 69900.070 ns/op
+[info] Iteration   1: 68932.910 ns/op
+[info] Iteration   2: 68638.886 ns/op
+[info] Iteration   3: 68896.474 ns/op
+[info] Iteration   4: 68678.912 ns/op
+[info] Iteration   5: 69781.190 ns/op
+[info] Result "mison.Benchmarks.mison":
+[info]   68985.674 ±(99.9%) 1783.342 ns/op [Average]
+[info]   (min, avg, max) = (68638.886, 68985.674, 69781.190), stdev = 463.128
+[info]   CI (99.9%): [67202.332, 70769.016] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonAvoidGettingBytes
+[info] # Parameters: (entry = empty)
+[info] # Run progress: 37.50% complete, ETA 00:06:28
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: <failure>
+[info] java.lang.NoSuchMethodError: mison.generated.Benchmarks_jmhType.misonAvoidGettingBytes(Lorg/openjdk/jmh/infra/Blackhole;)V
+[info] 	at mison.generated.Benchmarks_misonAvoidGettingBytes_jmhTest.misonAvoidGettingBytes_avgt_jmhStub(Benchmarks_misonAvoidGettingBytes_jmhTest.java:186)
+[info] 	at mison.generated.Benchmarks_misonAvoidGettingBytes_jmhTest.misonAvoidGettingBytes_AverageTime(Benchmarks_misonAvoidGettingBytes_jmhTest.java:150)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[info] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[info] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[info] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[info] 	at java.lang.Thread.run(Thread.java:748)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonAvoidGettingBytes
+[info] # Parameters: (entry = short)
+[info] # Run progress: 39.58% complete, ETA 00:05:59
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: <failure>
+[info] java.lang.NoSuchMethodError: mison.generated.Benchmarks_jmhType.misonAvoidGettingBytes(Lorg/openjdk/jmh/infra/Blackhole;)V
+[info] 	at mison.generated.Benchmarks_misonAvoidGettingBytes_jmhTest.misonAvoidGettingBytes_avgt_jmhStub(Benchmarks_misonAvoidGettingBytes_jmhTest.java:186)
+[info] 	at mison.generated.Benchmarks_misonAvoidGettingBytes_jmhTest.misonAvoidGettingBytes_AverageTime(Benchmarks_misonAvoidGettingBytes_jmhTest.java:150)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[info] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[info] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[info] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[info] 	at java.lang.Thread.run(Thread.java:748)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonAvoidGettingBytes
+[info] # Parameters: (entry = medium)
+[info] # Run progress: 41.67% complete, ETA 00:05:33
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: <failure>
+[info] java.lang.NoSuchMethodError: mison.generated.Benchmarks_jmhType.misonAvoidGettingBytes(Lorg/openjdk/jmh/infra/Blackhole;)V
+[info] 	at mison.generated.Benchmarks_misonAvoidGettingBytes_jmhTest.misonAvoidGettingBytes_avgt_jmhStub(Benchmarks_misonAvoidGettingBytes_jmhTest.java:186)
+[info] 	at mison.generated.Benchmarks_misonAvoidGettingBytes_jmhTest.misonAvoidGettingBytes_AverageTime(Benchmarks_misonAvoidGettingBytes_jmhTest.java:150)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[info] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[info] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[info] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[info] 	at java.lang.Thread.run(Thread.java:748)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonAvoidGettingBytes
+[info] # Parameters: (entry = long)
+[info] # Run progress: 43.75% complete, ETA 00:05:08
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: <failure>
+[info] java.lang.NoSuchMethodError: mison.generated.Benchmarks_jmhType.misonAvoidGettingBytes(Lorg/openjdk/jmh/infra/Blackhole;)V
+[info] 	at mison.generated.Benchmarks_misonAvoidGettingBytes_jmhTest.misonAvoidGettingBytes_avgt_jmhStub(Benchmarks_misonAvoidGettingBytes_jmhTest.java:186)
+[info] 	at mison.generated.Benchmarks_misonAvoidGettingBytes_jmhTest.misonAvoidGettingBytes_AverageTime(Benchmarks_misonAvoidGettingBytes_jmhTest.java:150)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[info] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[info] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[info] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[info] 	at java.lang.Thread.run(Thread.java:748)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonAvoidGettingBytes
+[info] # Parameters: (entry = huge)
+[info] # Run progress: 45.83% complete, ETA 00:04:45
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: <failure>
+[info] java.lang.NoSuchMethodError: mison.generated.Benchmarks_jmhType.misonAvoidGettingBytes(Lorg/openjdk/jmh/infra/Blackhole;)V
+[info] 	at mison.generated.Benchmarks_misonAvoidGettingBytes_jmhTest.misonAvoidGettingBytes_avgt_jmhStub(Benchmarks_misonAvoidGettingBytes_jmhTest.java:186)
+[info] 	at mison.generated.Benchmarks_misonAvoidGettingBytes_jmhTest.misonAvoidGettingBytes_AverageTime(Benchmarks_misonAvoidGettingBytes_jmhTest.java:150)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[info] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[info] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[info] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[info] 	at java.lang.Thread.run(Thread.java:748)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonAvoidGettingBytes
+[info] # Parameters: (entry = giant)
+[info] # Run progress: 47.92% complete, ETA 00:04:25
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: <failure>
+[info] java.lang.NoSuchMethodError: mison.generated.Benchmarks_jmhType.misonAvoidGettingBytes(Lorg/openjdk/jmh/infra/Blackhole;)V
+[info] 	at mison.generated.Benchmarks_misonAvoidGettingBytes_jmhTest.misonAvoidGettingBytes_avgt_jmhStub(Benchmarks_misonAvoidGettingBytes_jmhTest.java:186)
+[info] 	at mison.generated.Benchmarks_misonAvoidGettingBytes_jmhTest.misonAvoidGettingBytes_AverageTime(Benchmarks_misonAvoidGettingBytes_jmhTest.java:150)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[info] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[info] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[info] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[info] 	at java.lang.Thread.run(Thread.java:748)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonBuildStructure
+[info] # Parameters: (entry = empty)
+[info] # Run progress: 50.00% complete, ETA 00:04:05
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 915.242 ns/op
+[info] # Warmup Iteration   2: 833.260 ns/op
+[info] # Warmup Iteration   3: 807.404 ns/op
+[info] # Warmup Iteration   4: 813.686 ns/op
+[info] # Warmup Iteration   5: 815.225 ns/op
+[info] Iteration   1: 860.098 ns/op
+[info] Iteration   2: 834.621 ns/op
+[info] Iteration   3: 841.043 ns/op
+[info] Iteration   4: 833.003 ns/op
+[info] Iteration   5: 849.714 ns/op
+[info] Result "mison.Benchmarks.misonBuildStructure":
+[info]   843.696 ±(99.9%) 43.435 ns/op [Average]
+[info]   (min, avg, max) = (833.003, 843.696, 860.098), stdev = 11.280
+[info]   CI (99.9%): [800.261, 887.131] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonBuildStructure
+[info] # Parameters: (entry = short)
+[info] # Run progress: 52.08% complete, ETA 00:03:57
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1479.870 ns/op
+[info] # Warmup Iteration   2: 1161.882 ns/op
+[info] # Warmup Iteration   3: 1142.144 ns/op
+[info] # Warmup Iteration   4: 1133.907 ns/op
+[info] # Warmup Iteration   5: 1140.760 ns/op
+[info] Iteration   1: 1235.504 ns/op
+[info] Iteration   2: 1128.691 ns/op
+[info] Iteration   3: 1192.674 ns/op
+[info] Iteration   4: 1183.113 ns/op
+[info] Iteration   5: 1135.763 ns/op
+[info] Result "mison.Benchmarks.misonBuildStructure":
+[info]   1175.149 ±(99.9%) 169.197 ns/op [Average]
+[info]   (min, avg, max) = (1128.691, 1175.149, 1235.504), stdev = 43.940
+[info]   CI (99.9%): [1005.952, 1344.346] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonBuildStructure
+[info] # Parameters: (entry = medium)
+[info] # Run progress: 54.17% complete, ETA 00:03:48
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 2256.022 ns/op
+[info] # Warmup Iteration   2: 1935.851 ns/op
+[info] # Warmup Iteration   3: 1790.936 ns/op
+[info] # Warmup Iteration   4: 1940.339 ns/op
+[info] # Warmup Iteration   5: 1948.312 ns/op
+[info] Iteration   1: 1824.804 ns/op
+[info] Iteration   2: 1953.396 ns/op
+[info] Iteration   3: 1869.696 ns/op
+[info] Iteration   4: 2521.143 ns/op
+[info] Iteration   5: 2295.921 ns/op
+[info] Result "mison.Benchmarks.misonBuildStructure":
+[info]   2092.992 ±(99.9%) 1164.407 ns/op [Average]
+[info]   (min, avg, max) = (1824.804, 2092.992, 2521.143), stdev = 302.393
+[info]   CI (99.9%): [928.585, 3257.399] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonBuildStructure
+[info] # Parameters: (entry = long)
+[info] # Run progress: 56.25% complete, ETA 00:03:39
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 6639.062 ns/op
+[info] # Warmup Iteration   2: 4207.952 ns/op
+[info] # Warmup Iteration   3: 2578.784 ns/op
+[info] # Warmup Iteration   4: 2231.902 ns/op
+[info] # Warmup Iteration   5: 4032.349 ns/op
+[info] Iteration   1: 2224.680 ns/op
+[info] Iteration   2: 2266.200 ns/op
+[info] Iteration   3: 2489.718 ns/op
+[info] Iteration   4: 2333.993 ns/op
+[info] Iteration   5: 2252.929 ns/op
+[info] Result "mison.Benchmarks.misonBuildStructure":
+[info]   2313.504 ±(99.9%) 409.638 ns/op [Average]
+[info]   (min, avg, max) = (2224.680, 2313.504, 2489.718), stdev = 106.382
+[info]   CI (99.9%): [1903.866, 2723.141] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonBuildStructure
+[info] # Parameters: (entry = huge)
+[info] # Run progress: 58.33% complete, ETA 00:03:31
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 20773.882 ns/op
+[info] # Warmup Iteration   2: 13648.728 ns/op
+[info] # Warmup Iteration   3: 16609.560 ns/op
+[info] # Warmup Iteration   4: 10623.034 ns/op
+[info] # Warmup Iteration   5: 7978.603 ns/op
+[info] Iteration   1: 7987.723 ns/op
+[info] Iteration   2: 8065.046 ns/op
+[info] Iteration   3: 7963.596 ns/op
+[info] Iteration   4: 7941.817 ns/op
+[info] Iteration   5: 8286.016 ns/op
+[info] Result "mison.Benchmarks.misonBuildStructure":
+[info]   8048.840 ±(99.9%) 541.049 ns/op [Average]
+[info]   (min, avg, max) = (7941.817, 8048.840, 8286.016), stdev = 140.509
+[info]   CI (99.9%): [7507.791, 8589.888] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonBuildStructure
+[info] # Parameters: (entry = giant)
+[info] # Run progress: 60.42% complete, ETA 00:03:22
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 109760.218 ns/op
+[info] # Warmup Iteration   2: 26976.677 ns/op
+[info] # Warmup Iteration   3: 32690.487 ns/op
+[info] # Warmup Iteration   4: 25784.540 ns/op
+[info] # Warmup Iteration   5: 25662.202 ns/op
+[info] Iteration   1: 28175.518 ns/op
+[info] Iteration   2: 27630.588 ns/op
+[info] Iteration   3: 26154.477 ns/op
+[info] Iteration   4: 24845.618 ns/op
+[info] Iteration   5: 25734.293 ns/op
+[info] Result "mison.Benchmarks.misonBuildStructure":
+[info]   26508.099 ±(99.9%) 5282.522 ns/op [Average]
+[info]   (min, avg, max) = (24845.618, 26508.099, 28175.518), stdev = 1371.854
+[info]   CI (99.9%): [21225.577, 31790.621] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonConsumeCost
+[info] # Parameters: (entry = empty)
+[info] # Run progress: 62.50% complete, ETA 00:03:13
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: <failure>
+[info] java.lang.NoSuchMethodError: mison.generated.Benchmarks_jmhType.misonConsumeCost(Lorg/openjdk/jmh/infra/Blackhole;)V
+[info] 	at mison.generated.Benchmarks_misonConsumeCost_jmhTest.misonConsumeCost_avgt_jmhStub(Benchmarks_misonConsumeCost_jmhTest.java:186)
+[info] 	at mison.generated.Benchmarks_misonConsumeCost_jmhTest.misonConsumeCost_AverageTime(Benchmarks_misonConsumeCost_jmhTest.java:150)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[info] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[info] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[info] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[info] 	at java.lang.Thread.run(Thread.java:748)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonConsumeCost
+[info] # Parameters: (entry = short)
+[info] # Run progress: 64.58% complete, ETA 00:02:58
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: <failure>
+[info] java.lang.NoSuchMethodError: mison.generated.Benchmarks_jmhType.misonConsumeCost(Lorg/openjdk/jmh/infra/Blackhole;)V
+[info] 	at mison.generated.Benchmarks_misonConsumeCost_jmhTest.misonConsumeCost_avgt_jmhStub(Benchmarks_misonConsumeCost_jmhTest.java:186)
+[info] 	at mison.generated.Benchmarks_misonConsumeCost_jmhTest.misonConsumeCost_AverageTime(Benchmarks_misonConsumeCost_jmhTest.java:150)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[info] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[info] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[info] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[info] 	at java.lang.Thread.run(Thread.java:748)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonConsumeCost
+[info] # Parameters: (entry = medium)
+[info] # Run progress: 66.67% complete, ETA 00:02:43
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: <failure>
+[info] java.lang.NoSuchMethodError: mison.generated.Benchmarks_jmhType.misonConsumeCost(Lorg/openjdk/jmh/infra/Blackhole;)V
+[info] 	at mison.generated.Benchmarks_misonConsumeCost_jmhTest.misonConsumeCost_avgt_jmhStub(Benchmarks_misonConsumeCost_jmhTest.java:186)
+[info] 	at mison.generated.Benchmarks_misonConsumeCost_jmhTest.misonConsumeCost_AverageTime(Benchmarks_misonConsumeCost_jmhTest.java:150)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[info] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[info] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[info] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[info] 	at java.lang.Thread.run(Thread.java:748)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonConsumeCost
+[info] # Parameters: (entry = long)
+[info] # Run progress: 68.75% complete, ETA 00:02:29
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: <failure>
+[info] java.lang.NoSuchMethodError: mison.generated.Benchmarks_jmhType.misonConsumeCost(Lorg/openjdk/jmh/infra/Blackhole;)V
+[info] 	at mison.generated.Benchmarks_misonConsumeCost_jmhTest.misonConsumeCost_avgt_jmhStub(Benchmarks_misonConsumeCost_jmhTest.java:186)
+[info] 	at mison.generated.Benchmarks_misonConsumeCost_jmhTest.misonConsumeCost_AverageTime(Benchmarks_misonConsumeCost_jmhTest.java:150)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[info] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[info] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[info] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[info] 	at java.lang.Thread.run(Thread.java:748)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonConsumeCost
+[info] # Parameters: (entry = huge)
+[info] # Run progress: 70.83% complete, ETA 00:02:16
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: <failure>
+[info] java.lang.NoSuchMethodError: mison.generated.Benchmarks_jmhType.misonConsumeCost(Lorg/openjdk/jmh/infra/Blackhole;)V
+[info] 	at mison.generated.Benchmarks_misonConsumeCost_jmhTest.misonConsumeCost_avgt_jmhStub(Benchmarks_misonConsumeCost_jmhTest.java:186)
+[info] 	at mison.generated.Benchmarks_misonConsumeCost_jmhTest.misonConsumeCost_AverageTime(Benchmarks_misonConsumeCost_jmhTest.java:150)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[info] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[info] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[info] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[info] 	at java.lang.Thread.run(Thread.java:748)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonConsumeCost
+[info] # Parameters: (entry = giant)
+[info] # Run progress: 72.92% complete, ETA 00:02:03
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: <failure>
+[info] java.lang.NoSuchMethodError: mison.generated.Benchmarks_jmhType.misonConsumeCost(Lorg/openjdk/jmh/infra/Blackhole;)V
+[info] 	at mison.generated.Benchmarks_misonConsumeCost_jmhTest.misonConsumeCost_avgt_jmhStub(Benchmarks_misonConsumeCost_jmhTest.java:186)
+[info] 	at mison.generated.Benchmarks_misonConsumeCost_jmhTest.misonConsumeCost_AverageTime(Benchmarks_misonConsumeCost_jmhTest.java:150)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+[info] 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+[info] 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+[info] 	at java.lang.reflect.Method.invoke(Method.java:498)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:453)
+[info] 	at org.openjdk.jmh.runner.BenchmarkHandler$BenchmarkTask.call(BenchmarkHandler.java:437)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[info] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[info] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+[info] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+[info] 	at java.lang.Thread.run(Thread.java:748)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonFindResult
+[info] # Parameters: (entry = empty)
+[info] # Run progress: 75.00% complete, ETA 00:01:51
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 56.713 ns/op
+[info] # Warmup Iteration   2: 59.135 ns/op
+[info] # Warmup Iteration   3: 54.135 ns/op
+[info] # Warmup Iteration   4: 58.772 ns/op
+[info] # Warmup Iteration   5: 73.794 ns/op
+[info] Iteration   1: 61.669 ns/op
+[info] Iteration   2: 52.118 ns/op
+[info] Iteration   3: 55.410 ns/op
+[info] Iteration   4: 52.329 ns/op
+[info] Iteration   5: 52.693 ns/op
+[info] Result "mison.Benchmarks.misonFindResult":
+[info]   54.844 ±(99.9%) 15.556 ns/op [Average]
+[info]   (min, avg, max) = (52.118, 54.844, 61.669), stdev = 4.040
+[info]   CI (99.9%): [39.288, 70.400] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonFindResult
+[info] # Parameters: (entry = short)
+[info] # Run progress: 77.08% complete, ETA 00:01:43
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 501.096 ns/op
+[info] # Warmup Iteration   2: 302.559 ns/op
+[info] # Warmup Iteration   3: 359.428 ns/op
+[info] # Warmup Iteration   4: 284.417 ns/op
+[info] # Warmup Iteration   5: 285.457 ns/op
+[info] Iteration   1: 284.466 ns/op
+[info] Iteration   2: 285.371 ns/op
+[info] Iteration   3: 284.651 ns/op
+[info] Iteration   4: 284.977 ns/op
+[info] Iteration   5: 285.056 ns/op
+[info] Result "mison.Benchmarks.misonFindResult":
+[info]   284.904 ±(99.9%) 1.365 ns/op [Average]
+[info]   (min, avg, max) = (284.466, 284.904, 285.371), stdev = 0.354
+[info]   CI (99.9%): [283.540, 286.269] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonFindResult
+[info] # Parameters: (entry = medium)
+[info] # Run progress: 79.17% complete, ETA 00:01:34
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1365.181 ns/op
+[info] # Warmup Iteration   2: 859.167 ns/op
+[info] # Warmup Iteration   3: 839.088 ns/op
+[info] # Warmup Iteration   4: 912.835 ns/op
+[info] # Warmup Iteration   5: 844.568 ns/op
+[info] Iteration   1: 859.355 ns/op
+[info] Iteration   2: 885.877 ns/op
+[info] Iteration   3: 841.134 ns/op
+[info] Iteration   4: 838.688 ns/op
+[info] Iteration   5: 852.164 ns/op
+[info] Result "mison.Benchmarks.misonFindResult":
+[info]   855.444 ±(99.9%) 73.005 ns/op [Average]
+[info]   (min, avg, max) = (838.688, 855.444, 885.877), stdev = 18.959
+[info]   CI (99.9%): [782.439, 928.448] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonFindResult
+[info] # Parameters: (entry = long)
+[info] # Run progress: 81.25% complete, ETA 00:01:25
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 1907.047 ns/op
+[info] # Warmup Iteration   2: 1411.791 ns/op
+[info] # Warmup Iteration   3: 1192.624 ns/op
+[info] # Warmup Iteration   4: 1245.474 ns/op
+[info] # Warmup Iteration   5: 1740.165 ns/op
+[info] Iteration   1: 1101.285 ns/op
+[info] Iteration   2: 1121.847 ns/op
+[info] Iteration   3: 1119.564 ns/op
+[info] Iteration   4: 1097.767 ns/op
+[info] Iteration   5: 1093.376 ns/op
+[info] Result "mison.Benchmarks.misonFindResult":
+[info]   1106.768 ±(99.9%) 50.263 ns/op [Average]
+[info]   (min, avg, max) = (1093.376, 1106.768, 1121.847), stdev = 13.053
+[info]   CI (99.9%): [1056.505, 1157.031] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonFindResult
+[info] # Parameters: (entry = huge)
+[info] # Run progress: 83.33% complete, ETA 00:01:17
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 2062.609 ns/op
+[info] # Warmup Iteration   2: 1332.048 ns/op
+[info] # Warmup Iteration   3: 1222.967 ns/op
+[info] # Warmup Iteration   4: 1233.530 ns/op
+[info] # Warmup Iteration   5: 1422.785 ns/op
+[info] Iteration   1: 1241.323 ns/op
+[info] Iteration   2: 1190.099 ns/op
+[info] Iteration   3: 1193.259 ns/op
+[info] Iteration   4: 1341.021 ns/op
+[info] Iteration   5: 1190.712 ns/op
+[info] Result "mison.Benchmarks.misonFindResult":
+[info]   1231.283 ±(99.9%) 250.523 ns/op [Average]
+[info]   (min, avg, max) = (1190.099, 1231.283, 1341.021), stdev = 65.060
+[info]   CI (99.9%): [980.760, 1481.806] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonFindResult
+[info] # Parameters: (entry = giant)
+[info] # Run progress: 85.42% complete, ETA 00:01:07
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 2080.684 ns/op
+[info] # Warmup Iteration   2: 1511.767 ns/op
+[info] # Warmup Iteration   3: 1462.018 ns/op
+[info] # Warmup Iteration   4: 1468.319 ns/op
+[info] # Warmup Iteration   5: 1772.919 ns/op
+[info] Iteration   1: 1455.805 ns/op
+[info] Iteration   2: 1512.358 ns/op
+[info] Iteration   3: 1454.825 ns/op
+[info] Iteration   4: 1507.734 ns/op
+[info] Iteration   5: 1828.302 ns/op
+[info] Result "mison.Benchmarks.misonFindResult":
+[info]   1551.805 ±(99.9%) 604.472 ns/op [Average]
+[info]   (min, avg, max) = (1454.825, 1551.805, 1828.302), stdev = 156.980
+[info]   CI (99.9%): [947.333, 2156.277] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonJsonBytes
+[info] # Parameters: (entry = empty)
+[info] # Run progress: 87.50% complete, ETA 00:00:58
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 44.729 ns/op
+[info] # Warmup Iteration   2: 43.762 ns/op
+[info] # Warmup Iteration   3: 43.710 ns/op
+[info] # Warmup Iteration   4: 41.287 ns/op
+[info] # Warmup Iteration   5: 44.510 ns/op
+[info] Iteration   1: 44.247 ns/op
+[info] Iteration   2: 42.889 ns/op
+[info] Iteration   3: 49.187 ns/op
+[info] Iteration   4: 71.290 ns/op
+[info] Iteration   5: 44.874 ns/op
+[info] Result "mison.Benchmarks.misonJsonBytes":
+[info]   50.497 ±(99.9%) 45.668 ns/op [Average]
+[info]   (min, avg, max) = (42.889, 50.497, 71.290), stdev = 11.860
+[info]   CI (99.9%): [4.829, 96.165] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonJsonBytes
+[info] # Parameters: (entry = short)
+[info] # Run progress: 89.58% complete, ETA 00:00:49
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 104.129 ns/op
+[info] # Warmup Iteration   2: 100.278 ns/op
+[info] # Warmup Iteration   3: 82.125 ns/op
+[info] # Warmup Iteration   4: 79.256 ns/op
+[info] # Warmup Iteration   5: 84.537 ns/op
+[info] Iteration   1: 90.306 ns/op
+[info] Iteration   2: 84.045 ns/op
+[info] Iteration   3: 80.969 ns/op
+[info] Iteration   4: 80.916 ns/op
+[info] Iteration   5: 79.676 ns/op
+[info] Result "mison.Benchmarks.misonJsonBytes":
+[info]   83.182 ±(99.9%) 16.543 ns/op [Average]
+[info]   (min, avg, max) = (79.676, 83.182, 90.306), stdev = 4.296
+[info]   CI (99.9%): [66.640, 99.725] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonJsonBytes
+[info] # Parameters: (entry = medium)
+[info] # Run progress: 91.67% complete, ETA 00:00:39
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 227.047 ns/op
+[info] # Warmup Iteration   2: 240.887 ns/op
+[info] # Warmup Iteration   3: 175.882 ns/op
+[info] # Warmup Iteration   4: 176.963 ns/op
+[info] # Warmup Iteration   5: 175.259 ns/op
+[info] Iteration   1: 174.323 ns/op
+[info] Iteration   2: 176.150 ns/op
+[info] Iteration   3: 176.427 ns/op
+[info] Iteration   4: 176.095 ns/op
+[info] Iteration   5: 175.104 ns/op
+[info] Result "mison.Benchmarks.misonJsonBytes":
+[info]   175.620 ±(99.9%) 3.394 ns/op [Average]
+[info]   (min, avg, max) = (174.323, 175.620, 176.427), stdev = 0.881
+[info]   CI (99.9%): [172.226, 179.014] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonJsonBytes
+[info] # Parameters: (entry = long)
+[info] # Run progress: 93.75% complete, ETA 00:00:29
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 920.143 ns/op
+[info] # Warmup Iteration   2: 758.846 ns/op
+[info] # Warmup Iteration   3: 766.344 ns/op
+[info] # Warmup Iteration   4: 756.606 ns/op
+[info] # Warmup Iteration   5: 743.479 ns/op
+[info] Iteration   1: 753.231 ns/op
+[info] Iteration   2: 744.748 ns/op
+[info] Iteration   3: 739.908 ns/op
+[info] Iteration   4: 757.464 ns/op
+[info] Iteration   5: 758.919 ns/op
+[info] Result "mison.Benchmarks.misonJsonBytes":
+[info]   750.854 ±(99.9%) 31.723 ns/op [Average]
+[info]   (min, avg, max) = (739.908, 750.854, 758.919), stdev = 8.238
+[info]   CI (99.9%): [719.131, 782.577] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonJsonBytes
+[info] # Parameters: (entry = huge)
+[info] # Run progress: 95.83% complete, ETA 00:00:20
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 9849.232 ns/op
+[info] # Warmup Iteration   2: 9385.517 ns/op
+[info] # Warmup Iteration   3: 9288.357 ns/op
+[info] # Warmup Iteration   4: 9280.273 ns/op
+[info] # Warmup Iteration   5: 11619.220 ns/op
+[info] Iteration   1: 10090.363 ns/op
+[info] Iteration   2: 9343.233 ns/op
+[info] Iteration   3: 9533.086 ns/op
+[info] Iteration   4: 9586.496 ns/op
+[info] Iteration   5: 9658.660 ns/op
+[info] Result "mison.Benchmarks.misonJsonBytes":
+[info]   9642.368 ±(99.9%) 1064.183 ns/op [Average]
+[info]   (min, avg, max) = (9343.233, 9642.368, 10090.363), stdev = 276.365
+[info]   CI (99.9%): [8578.184, 10706.551] (assumes normal distribution)
+[info] # JMH version: 1.21
+[info] # VM version: JDK 1.8.0_191, Java HotSpot(TM) 64-Bit Server VM, 25.191-b12
+[info] # VM invoker: /Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/jre/bin/java
+[info] # VM options: -server -Xms2g -Xmx2g -XX:NewSize=1g -XX:MaxNewSize=1g -XX:InitialCodeCacheSize=512m -XX:ReservedCodeCacheSize=512m -XX:+UseParallelGC -XX:-UseBiasedLocking -XX:+AlwaysPreTouch
+[info] # Warmup: 5 iterations, 1 s each
+[info] # Measurement: 5 iterations, 1 s each
+[info] # Timeout: 10 min per iteration
+[info] # Threads: 1 thread, will synchronize iterations
+[info] # Benchmark mode: Average time, time/op
+[info] # Benchmark: mison.Benchmarks.misonJsonBytes
+[info] # Parameters: (entry = giant)
+[info] # Run progress: 97.92% complete, ETA 00:00:10
+[info] # Fork: 1 of 1
+[info] # Warmup Iteration   1: 43434.315 ns/op
+[info] # Warmup Iteration   2: 42030.433 ns/op
+[info] # Warmup Iteration   3: 42935.830 ns/op
+[info] # Warmup Iteration   4: 42045.853 ns/op
+[info] # Warmup Iteration   5: 44266.692 ns/op
+[info] Iteration   1: 41157.795 ns/op
+[info] Iteration   2: 41281.309 ns/op
+[info] Iteration   3: 42799.303 ns/op
+[info] Iteration   4: 42177.234 ns/op
+[info] Iteration   5: 43177.036 ns/op
+[info] Result "mison.Benchmarks.misonJsonBytes":
+[info]   42118.535 ±(99.9%) 3450.187 ns/op [Average]
+[info]   (min, avg, max) = (41157.795, 42118.535, 43177.036), stdev = 896.003
+[info]   CI (99.9%): [38668.349, 45568.722] (assumes normal distribution)
+[info] # Run complete. Total time: 00:08:04
+[info] REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+[info] why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+[info] experiments, perform baseline and negative tests that provide experimental control, make sure
+[info] the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+[info] Do not assume the numbers tell you what you want them to tell.
+[info] Benchmark                       (entry)  Mode  Cnt      Score      Error  Units
+[info] Benchmarks.fastJson               empty  avgt    5     53.164 ±    3.408  ns/op
+[info] Benchmarks.fastJson               short  avgt    5    274.654 ±   12.631  ns/op
+[info] Benchmarks.fastJson              medium  avgt    5    686.856 ±   59.097  ns/op
+[info] Benchmarks.fastJson                long  avgt    5   2899.046 ±  430.856  ns/op
+[info] Benchmarks.fastJson                huge  avgt    5  23149.366 ± 1724.792  ns/op
+[info] Benchmarks.fastJson               giant  avgt    5  85759.548 ± 5929.343  ns/op
+[info] Benchmarks.jackson                empty  avgt    5    102.228 ±   51.599  ns/op
+[info] Benchmarks.jackson                short  avgt    5    319.294 ±  284.531  ns/op
+[info] Benchmarks.jackson               medium  avgt    5    663.142 ±  390.043  ns/op
+[info] Benchmarks.jackson                 long  avgt    5   2720.228 ±  405.687  ns/op
+[info] Benchmarks.jackson                 huge  avgt    5  21085.040 ± 2252.081  ns/op
+[info] Benchmarks.jackson                giant  avgt    5  85118.665 ± 1896.929  ns/op
+[info] Benchmarks.mison                  empty  avgt    5    867.617 ±   66.283  ns/op
+[info] Benchmarks.mison                  short  avgt    5   1591.769 ±  277.979  ns/op
+[info] Benchmarks.mison                 medium  avgt    5   3061.285 ±  163.503  ns/op
+[info] Benchmarks.mison                   long  avgt    5   4070.510 ±  168.439  ns/op
+[info] Benchmarks.mison                   huge  avgt    5  19093.428 ± 2303.215  ns/op
+[info] Benchmarks.mison                  giant  avgt    5  68985.674 ± 1783.342  ns/op
+[info] Benchmarks.misonBuildStructure    empty  avgt    5    843.696 ±   43.435  ns/op
+[info] Benchmarks.misonBuildStructure    short  avgt    5   1175.149 ±  169.197  ns/op
+[info] Benchmarks.misonBuildStructure   medium  avgt    5   2092.992 ± 1164.407  ns/op
+[info] Benchmarks.misonBuildStructure     long  avgt    5   2313.504 ±  409.638  ns/op
+[info] Benchmarks.misonBuildStructure     huge  avgt    5   8048.840 ±  541.049  ns/op
+[info] Benchmarks.misonBuildStructure    giant  avgt    5  26508.099 ± 5282.522  ns/op
+[info] Benchmarks.misonFindResult        empty  avgt    5     54.844 ±   15.556  ns/op
+[info] Benchmarks.misonFindResult        short  avgt    5    284.904 ±    1.365  ns/op
+[info] Benchmarks.misonFindResult       medium  avgt    5    855.444 ±   73.005  ns/op
+[info] Benchmarks.misonFindResult         long  avgt    5   1106.768 ±   50.263  ns/op
+[info] Benchmarks.misonFindResult         huge  avgt    5   1231.283 ±  250.523  ns/op
+[info] Benchmarks.misonFindResult        giant  avgt    5   1551.805 ±  604.472  ns/op
+[info] Benchmarks.misonJsonBytes         empty  avgt    5     50.497 ±   45.668  ns/op
+[info] Benchmarks.misonJsonBytes         short  avgt    5     83.182 ±   16.543  ns/op
+[info] Benchmarks.misonJsonBytes        medium  avgt    5    175.620 ±    3.394  ns/op
+[info] Benchmarks.misonJsonBytes          long  avgt    5    750.854 ±   31.723  ns/op
+[info] Benchmarks.misonJsonBytes          huge  avgt    5   9642.368 ± 1064.183  ns/op
+[info] Benchmarks.misonJsonBytes         giant  avgt    5  42118.535 ± 3450.187  ns/op
+[success] Total time: 499 s, completed 2019-1-16 15:53:50
