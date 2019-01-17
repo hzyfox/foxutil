@@ -9,9 +9,10 @@ import scala.io.Source
 object ReadFile {
   def readFile(filePath: String): (String, List[String]) = {
     val strList = Source.fromFile(filePath).getLines().filter((str: String) => {
-      str.contains("±") || str.contains("Cnt")
+      str.contains("avgt") || str.contains("Cnt")
     }).toList
     val head = strList.head
-    (head, strList.drop(0))
+    (head, strList.drop(1))
   }
+
 }
