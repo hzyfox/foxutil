@@ -146,8 +146,10 @@ object DataManipulate {
       writableSheet.removeColumn(3 + i * 2 - deleteNumber)
       deleteNumber += 1
     }
-    for (i <- 0 until columnCellKindNumber) {
-      setCellContent(3 + i, 0, writableSheet.getCell(3 + i, 0).getContents.split("±")(0).split("""\.""")(1), writableSheet)
+    for (i <- 0 until columnKindNumber) {
+      setCellContent(3 + i, 0, writableSheet.getCell(3 + i, 0)
+        .getContents.split("±")(0)
+        .split("""\.""")(1), writableSheet)
     }
 
   }
@@ -247,8 +249,8 @@ object DataManipulate {
 
 
   def main(args: Array[String]): Unit = {
-    outputPath = "/Users/guyue/Desktop/select-3_4.xls"
-    inputPath = "/Users/guyue/workspace/mison/result/select-3_4"
+    outputPath = "/Users/guyue/Desktop/select-3_3.xls"
+    inputPath = "/Users/guyue/workspace/foxutil/result/select-3_3"
     getWritableWorkBook(outputPath)
     writeRawData(ReadFile.readFile(inputPath), 0)
 
