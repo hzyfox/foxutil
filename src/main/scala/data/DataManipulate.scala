@@ -249,8 +249,8 @@ object DataManipulate {
 
 
   def main(args: Array[String]): Unit = {
-    outputPath = "/Users/guyue/Desktop/select-3_3.xls"
-    inputPath = "/Users/guyue/workspace/foxutil/result/select-3_3"
+    outputPath = "/Users/guyue/Desktop/select-jnicost-6.xls"
+    inputPath = "/Users/guyue/workspace/mison/result/select-jnicost-6"
     getWritableWorkBook(outputPath)
     writeRawData(ReadFile.readFile(inputPath), 0)
 
